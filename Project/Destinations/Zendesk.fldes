@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CatapultDestination
+  Version="1"
+  Comment="This is my publish destination"
+  Host="qa-tyler-test.zendesk.com"
+  User="MyAccountId"
+  Password=""
+  Directory="oauth/authorizations/new"
+  Port=""
+  ViewUrl="http://www.madcapsoftware.com/"
+  Type="zendesk"
+  ClickUrl="https://qa-tyler-test.zendesk.com"
+  DefaultCategory="360001403693"
+  DefaultSection="360003201374"
+  PublishAfterUpload="true"
+  PreserveUnsafeHtml="true"
+  ArticleType="Knowledge__kav"
+  RecordType="0121N000000qqu4QAA"></CatapultDestination>
