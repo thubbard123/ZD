@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="218" MadCap:lastWidth="1249">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title></title>
+    </head>
+    <body>
+        <div class="content-container">
+            <div class="side-content">
+                <MadCap:topicToolbarProxy style="mc-topic-toolbar-items: ;" data-mc-skin="/Project/Skins/TopicToolBar.flskn" />
+                <MadCap:menuProxy style="mc-context-sensitive: True;mc-include-parent: True;mc-include-siblings: True;mc-include-children: True;" data-mc-skin="/Project/Skins/SideMenu.flskn" />
+            </div>
+            <MadCap:breadcrumbsProxy />
+            <MadCap:bodyProxy />
+        </div>
+    </body>
+</html>

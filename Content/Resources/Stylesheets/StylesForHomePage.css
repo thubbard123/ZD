@@ -1,0 +1,551 @@
+﻿/*<meta />*/
+
+/*===========================================================================================================================================================
+
+Hello! If this is your first time looking at a stylesheet within the text editor view, what you are reading right now is a "comment". Comments are added throughout this stylesheet with the purpose of making the source code easier to understand, comments will not be interpreted during the compile process. Since comments are not interpreted during the compile process, feel free to add or remove any comments.
+
+For help with MadCap Flare go to Help Ribbon > Topics Section > Open Help. Alternatively visit the Flare Online Help at help.madcapsoftware.com
+
+If you have any questions regarding how to work with this stylesheet or template project, please contact MadCap Technical Support. 
+https://www.madcapsoftware.com/support/contact-options.aspx
+
+NOTE: Generally, this stylesheet has elements listed out in the order that they appear in the topic from top to bottom. The exception are General styles which are at the top and the stylesheet mediums which are at the bottom.
+
+EXAMPLE: Since the Topic/Banner image is at the top of the home page, it will be listed closer to the top of this stylesheet. While, the footer will be written towards the bottom. 
+
+===========================================================================================================================================================*/
+
+/* Home Page General Styles*/
+
+body
+{
+	font-family: Arial;
+	line-height: 1.5em;
+	background-color: #e4e8e8;
+}
+
+h1
+{
+	font-size: 2.75em;
+}
+
+h2
+{
+	font-size: 1.6785em;
+}
+
+p
+{
+	color: #5a5a5a;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+span.highlight /*Span class used to change the color of text within block elements*/
+{
+	color: #19b9f3;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.off-canvas-content .main-section > .outer-row
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+/*==Mad Cap proxy/editor assigned styles==*/
+
+MadCap|searchBarProxy
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+	width: 50%;
+}
+
+MadCap|topicToolbarProxy
+{
+	float: none;
+}
+
+MadCap|menuProxy.menu1
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|menuProxy.menu2
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+html.home-page
+{
+	mc-community-features: disabled;
+}
+
+/*==Top Navigation Bar Section==*/
+
+nav.title-bar
+{
+	position: absolute;
+	width: 100%;
+	opacity: 0.8;
+}
+
+/*==Home Page Hero Section==*/
+
+div.topic-hero /*This is the Hero/Banner on the Home Page - To replace the banner image with your own, change background-image property*/
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	height: 500px;
+	padding-bottom: 150px;
+	padding-top: 150px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	background-image: url('../Images/Assets/HeroStockImages/HeroImage-1.jpg');
+	background-position: center;
+}
+
+/*==Home Tiles section==*/
+
+div.home-tiles-container
+{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-top: -150px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+
+div.home-tiles	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.home-tiles::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-tiles::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-tiles > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 300px;
+	background-color: rgba(0, 0, 0, 0.85);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 11.5px;
+	padding-right: 11.5px;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	overflow: hidden;
+}
+
+div.home-tiles > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 12.667%;
+}
+
+div.home-tiles > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 2%;
+}
+
+div.home-tiles > div:nth-child(3)
+{
+	width: 16.667%;
+	margin-left: 2%;
+}
+
+div.home-tiles > div:nth-child(4)
+{
+	width: 16.667%;
+	margin-left: 2%;
+}
+
+/*=Elements for text contained within each home-tile=*/
+
+p.tile-title
+{
+	text-align: center;
+	font-weight: bold;
+	color: #19b9f3;
+}
+
+p.tile-subtitle
+{
+	text-align: center;
+	color: #ffffff;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+p.tile-content
+{
+	color: #ffffff;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+div.home-tiles a /*Complex Selector: Links within the home tiles will have the following properties*/
+{
+	text-decoration: none;
+	color: #19b9f3;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+div.home-tiles a:hover /*Complex Selector: When hovering over links within the home tiles the following properties will apply.*/
+{
+	color: #fff;
+}
+
+/*==Info section==*/
+
+div.info-section	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.info-section::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.info-section::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.info-section > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.info-section > div:nth-child(1)
+{
+	width: 16.667%;
+	margin-left: 16.667%;
+}
+
+div.info-section > div:nth-child(2)
+{
+	width: 16.667%;
+	margin-left: 2%;
+}
+
+div.info-section > div:nth-child(3)	/*Video Container*/
+{
+	width: 33.333%;
+	margin-left: 5%;
+}
+
+/*=Elements for content contained within each info section=*/
+
+p.info-title
+{
+	line-height: 1em;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #9c9c9c;
+}
+
+p.info-content
+{
+	font-size: 0.9em;
+}
+
+/*==Home Page Footer==*/
+
+div.footer
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: black;
+	background: -webkit-linear-gradient(#004863, black, black);
+	background: -o-linear-gradient(#004863, black, black);
+	background: -moz-linear-gradient(#004863, black, black);
+	background: linear-gradient(#004863, black, black);
+}
+
+div.footer a
+{
+	text-decoration: none;
+	color: #DADADA;
+}
+
+div.footer p /* Complex Selector: Any <p> that is contained within div.footer will have the following properties */
+{
+	font-size: 0.8em;
+	color: #b1b1b1;
+}
+
+div.home-master-page-footer	/*This layout was created using the Responsive Layout Editor in MadCap Flare. Go to: Home Ribbon > Styles Section > Responsive Layout*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+	width: 55%;
+}
+
+div.home-master-page-footer::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.home-master-page-footer::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.home-master-page-footer > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.home-master-page-footer > div:nth-child(1)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.home-master-page-footer > div:nth-child(2)
+{
+	width: 50%;
+	margin-left: 0%;
+}
+
+div.home-master-page-footer > div:nth-child(3)
+{
+	width: 25%;
+	margin-left: 0%;
+}
+
+div.info-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	padding-bottom: 75px;
+}
+
+/*===========================================================================================================================================================
+Styles after this point are styles that are for specific mediums. If any additional styles are added to this template they will be listed after mediums.
+[@media tablet] declares styles that will apply when the screen is in tablet view
+[@media mobile] declares styles that will apply when the screen is in mobile view
+===========================================================================================================================================================*/
+
+@media tablet
+{
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 33.33333%;
+		margin-left: 10%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 33.333%;
+		margin-left: 16.667%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 33.33333%;
+		margin-left: 10%;
+		margin-top: 2%;
+	}
+
+	div.home-tiles > div:nth-child(4)
+	{
+		width: 33.333%;
+		margin-left: 16.667%;
+		margin-top: 2%;
+	}
+
+	div.info-section > div
+	{
+		text-align: center;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 5%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 5%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+	
+	p.info-title
+	{
+		font-size: 2em;
+	}
+
+	p.info-content
+	{
+		font-size: 1em;
+	}
+	div.footer
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	div.home-master-page-footer > div:nth-child(1)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+
+	div.home-master-page-footer > div:nth-child(2)
+	{
+		width: 50%;
+		margin-left: 0%;
+	}
+
+	div.home-master-page-footer > div:nth-child(3)
+	{
+		width: 25%;
+		margin-left: 0%;
+	}
+}
+
+@media mobile
+{
+	div.home-tiles > div
+	{
+		margin-top: 2%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-tiles > div:nth-child(4)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+	
+	p.tile-title
+	{
+		font-size: 1.1em;
+	}
+
+	div.info-section > div
+	{
+		text-align: center;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 5%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 5%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+	
+	p.info-title
+	{
+		font-size: 2em;
+	}
+
+	p.info-content
+	{
+		font-size: 1em;
+	}
+
+	div.home-master-page-footer > div:nth-child(1)
+	{
+		width: 100%;
+	}
+
+	div.home-master-page-footer > div:nth-child(2)
+	{
+		width: 100%;
+	}
+
+	div.home-master-page-footer > div:nth-child(3)
+	{
+		width: 100%;
+	}
+
+}
