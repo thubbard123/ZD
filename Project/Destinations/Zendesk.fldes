@@ -15,4 +15,5 @@
   PublishAfterUpload="true"
   PreserveUnsafeHtml="true"
   ArticleType="Knowledge__kav"
-  RecordType="0121N000000qqu4QAA"></CatapultDestination>
+  RecordType="0121N000000qqu4QAA"
+  RemoveStale="false"></CatapultDestination>
